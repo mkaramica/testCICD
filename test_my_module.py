@@ -23,6 +23,7 @@ def test_divide():
     assert my_module.divide(0, 1) == 0
     assert my_module.divide(-4, 2) == -2
     assert my_module.divide(4, -2) == -2
+    assert my_module.divide(-4, -2) == 2
     try:
         my_module.divide(4, 0)
         assert False, "Expected ZeroDivisionError"
